@@ -27,18 +27,25 @@
   display: none;
 }
 
+#legend {
+  display: flex;
+  flex-direction: column;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 .legend-yes,
 .legend-no {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
   border-radius: 4px;
 }
-
 .legend-yes {
   background-color: orange;
 }
-
 .legend-no {
   background-color: steelblue;
 }

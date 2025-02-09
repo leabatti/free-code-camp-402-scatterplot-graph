@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+#container {
+  font-family: "Montserrat", sans-serif;
+  background-color: lightgrey;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 50px 0;
+  margin: 50px auto auto auto; /* Para centrar horizontalmente */
+  width: 65%; /* Ajusta el ancho según tus necesidades */
+  border-radius: 15px; /* Bordes redondeados */
+  position: relative;
+  max-width: 70%; /* Ajusta el ancho máximo */
+}
+
+#tooltip {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+
+.legend-yes,
+.legend-no {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.legend-yes {
+  background-color: orange;
+}
+
+.legend-no {
+  background-color: steelblue;
+}
+
+.dot.doping {
+  fill: orange;
+}
+
+.dot.no-doping {
+  fill: steelblue;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
